@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import "./ProductList.css";
 import ProductItem from "../ProductItem/ProductItem";
-import products from "../../dataStore.js";
+import {products} from "../../dataStore.js";
 import { useTelegram } from "../../hooks/useTelegram.js";
 
 const getTotalPrice = (items) => {
