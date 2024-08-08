@@ -26,8 +26,8 @@ const Form = () => {
     } else {
       tg.MainButton.show();
     }
-  }, [name, phone]);
-  
+  }, [tg,name, phone]);
+
   return (
     <div className={"form"}>
       <h3>Enter your details</h3>
