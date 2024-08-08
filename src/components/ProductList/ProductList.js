@@ -1,11 +1,11 @@
 import React, { useState } from "react";
 import "./ProductList.css";
 import ProductItem from "../ProductItem/ProductItem";
-import {products} from "../../dataStore.js";
+import { products } from "../../dataStore.js";
 import { useTelegram } from "../../hooks/useTelegram.js";
 
 const getTotalPrice = (items) => {
-  return items.product((acc, item) => {
+  return items.products((acc, item) => {
     return (acc += item.price);
   }, 0);
 };
