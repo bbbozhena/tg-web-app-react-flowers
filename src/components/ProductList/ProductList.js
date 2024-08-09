@@ -4,8 +4,8 @@ import ProductItem from "../ProductItem/ProductItem";
 import { products } from "../../dataStore.js";
 import { useTelegram } from "../../hooks/useTelegram.js";
 
-const getTotalPrice = (items) => {
-  return items.products((acc, item) => {
+const getTotalPrice = (items = []) => {
+  return items.reduce((acc, item) => {
     return (acc += item.price);
   }, 0);
 };
