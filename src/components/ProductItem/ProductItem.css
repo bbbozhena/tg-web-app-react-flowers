@@ -10,7 +10,7 @@
     width: 100px;
     height: 100px;
     margin: 0 auto;
-    background: var(--tg-theme-background-color);
+    background: pink;
 }
 .description{
     font-size: 0.8em;
